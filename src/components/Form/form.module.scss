@@ -5,20 +5,23 @@
     background-color: #7687A1;
     border-radius: 10px;
     box-shadow: 2px 4px 4px #0000009F;
-    padding: 12px;
+    padding: 24px 0;
   
     .input__container {
       display: flex;
       flex-direction: column;
-      width: 100%;
+      margin: 0 auto;
+      width: 80%;
       margin-bottom: 16px;
   
       label {
         margin-bottom: 8px;
         font-size: 1.25rem;
+        text-align: center;
       }
   
       input {
+        text-align: center;
         width: 100%;
         padding: 8px 12px 4px;
         box-sizing: border-box;
