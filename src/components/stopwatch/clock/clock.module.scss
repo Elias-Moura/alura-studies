@@ -1,0 +1,16 @@
+.clockNumber {
+    background-color: #5D677C;
+    box-shadow: 2px 2px 4px #2B2B2B inset;
+    border-radius: 10px;
+    padding: .3em .05em 0 .05em;
+    margin: .15em 0;
+
+    @media screen and (min-width:1280px) {
+        margin: auto 0;
+    }
+}
+
+.clockDivision {
+    align-self: center;
+    padding-top: .15em;
+}
