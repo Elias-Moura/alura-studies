@@ -16,8 +16,14 @@ export default function Item(
     }: Props){
     return (
     <li 
-        className={`${style.item} ${isSelected ? style.itemSelected : ''}`} 
-        onClick={() => selectTask(
+        className={
+            `
+                ${style.item} ${isSelected ? style.itemSelected : ''} 
+                ${isCompleted ? style.itemCompleted : ''}
+            `
+            
+        } 
+        onClick={() => !isCompleted && selectTask(
             {
                 task,
                 time,
@@ -29,6 +35,8 @@ export default function Item(
         }>
         <h3>{task}</h3>
         <span>{time}</span>
+        {isCompleted && 
+        <span className={style.completed} aria-label="task completed"></span>}
     </li>
     )
 }
